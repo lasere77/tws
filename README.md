@@ -5,10 +5,6 @@ She has 2500 durability points.
 
 
 items:
-<<<<<<< HEAD
-=======
-
->>>>>>> 3013fe374d635ecfd84189d5f24eab2037d5d73e
     full galaxium armor
     "galaxium_ingot"
     "galaxium_nugget"
@@ -16,10 +12,6 @@ items:
     "galaxium_pickaxe"
 
 blocks:
-<<<<<<< HEAD
-=======
-
->>>>>>> 3013fe374d635ecfd84189d5f24eab2037d5d73e
     "galaxium_ore"
     "galaxium_block"
     "galaxium_strairs"
@@ -29,7 +21,6 @@ blocks:
 
 
 craft:
-<<<<<<< HEAD
     armor:
     to create a galaxy armor you will need the galaxium ingot the pattern is the same as for the basic armor
     
@@ -66,30 +57,3 @@ to get galaxium nugget you just have to put galaxium ores in an oven
 
 
 Available on Minecraft version 1.7.10
-=======
-
-    armor:
-    to create a galaxy armor you will need the galaxium ingot the pattern is the same as for the basic armor
-    
-    galaxy_sword:
-        L = gold
-        # = galaxy_ingot
-        [ ] [L] [ ]
-        [ ] [#] [ ]
-        [ ] [#] [ ]
-        
-    galaxium_pickaxe:
-        L = gold
-        # = galaxy_ingot
-        [#] [#] [#]
-        [ ] [#] [ ]
-        [ ] [L] [ ]
-
-
-
-to get galaxium ingot you just have to put galaxium ores in an oven
-
-
-
-Available on Minecraft version 1.7.10
->>>>>>> 3013fe374d635ecfd84189d5f24eab2037d5d73e
