@@ -1,0 +1,15 @@
+item.galaxium_ingot.name=l'ingot de galaxium
+item.galaxium_sword.name=épée en galaxium
+item.galaxium_pickaxe.name=pioche en galaxium
+item.galaxium_nugget.name=pépite de galaxium 
+
+item.galaxium_helmet.name=casque en galaxium 
+item.galaxium_chestplate.name=plastron en galaxium 
+item.galaxium_leggings.name=pantalon en galaxium
+item.galaxium_boots.name=bottes en galaxium
+
+tile.galaxium_ore.name=minerais de galaxium
+tile.galaxium_block.name=block de galaxium
+tille.galaxium_strairs.name=escalier en galaxium
+tille.galaxium_fence.name=barrière engalaxium
+tille.cave_block.name=cave block

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tws",
+  "name": "tws",
+  "description": "hey is my first mod in 1.7.10",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/lasere77",
+  "updateUrl": "",
+  "authorList": ["lasere"],
+  "credits": "lasere",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
