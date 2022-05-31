@@ -5,6 +5,7 @@ She has 2500 durability points.
 
 
 items:
+
     full galaxium armor
     "galaxium_ingot"
     "galaxium_nugget"
@@ -12,6 +13,7 @@ items:
     "galaxium_pickaxe"
 
 blocks:
+
     "galaxium_ore"
     "galaxium_block"
     "galaxium_strairs"
@@ -21,31 +23,32 @@ blocks:
 
 
 craft:
+
     armor:
     to create a galaxy armor you will need the galaxium ingot the pattern is the same as for the basic armor
     
-   galaxy_sword:
-       L = gold
-       # = galaxy_ingot
-       [ ] [L] [ ]
-       [ ] [#] [ ]
-       [ ] [#] [ ]
+    galaxy_sword:
+        L = gold
+        # = galaxy_ingot
+        [ ] [L] [ ]
+        [ ] [#] [ ]
+        [ ] [#] [ ]
         
-   galaxium_pickaxe:
-       L = gold
-       # = galaxy_ingot
-       [#] [#] [#]
-       [ ] [#] [ ]
-       [ ] [L] [ ]
+    galaxium_pickaxe:
+        L = gold
+        # = galaxy_ingot
+        [#] [#] [#]
+        [ ] [#] [ ]
+        [ ] [L] [ ]
 
-   galaxium_ingot:
-       g = galaxium_nugget
-       [g] [g] [g]
-       [g] [g] [g]
-       [g] [g] [g]
+    galaxium_ingot:
+        g = galaxium_nugget
+        [g] [g] [g]
+        [g] [g] [g]
+        [g] [g] [g]
 
-   galaxium_nugget:
-      # = galaxium_ingot
+    galaxium_nugget:
+       # = galaxium_ingot
        [#] [#] [#]
        [#] [#] [#]
        [#] [#] [#]
