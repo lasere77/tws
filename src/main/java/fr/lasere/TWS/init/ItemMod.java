@@ -2,6 +2,7 @@ package fr.lasere.TWS.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.lasere.TWS.Reference;
+import fr.lasere.TWS.TWS;
 import fr.lasere.TWS.items.ItemArmorMod;
 import fr.lasere.TWS.items.ItemsPickaxesMod;
 import fr.lasere.TWS.items.ItemsSwords;
@@ -27,15 +28,15 @@ public class ItemMod {
 	public static Item galaxium_stick;
 	
 	public static void init() {
-		galaxium_ingot = new Item().setUnlocalizedName("galaxium_ingot").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(Reference.MOD_ID + ":galaxium_ingot");
-		galaxium_sword = new ItemsSwords(GALAXIUM).setUnlocalizedName("galaxium_sword").setTextureName(Reference.MOD_ID + ":galaxium_sword");
-		galaxium_pickaxe = new ItemsPickaxesMod(GALAXIUM).setUnlocalizedName("galaxium_pickaxe").setTextureName(Reference.MOD_ID + ":galaxium_pickaxe");
-		galaxium_nugget = new Item().setUnlocalizedName("galaxium_nugget").setTextureName(Reference.MOD_ID + ":galaxium_nugget").setCreativeTab(CreativeTabs.tabMaterials);
-		galaxium_helmet = new ItemArmorMod(GALAXIUMA, 0, 0).setUnlocalizedName("galaxium_helmet").setTextureName(Reference.MOD_ID + ":galaxium_helmet").setCreativeTab(CreativeTabs.tabCombat);
-		galaxium_chestplate = new ItemArmorMod(GALAXIUMA, 0, 1).setUnlocalizedName("galaxium_chestplate").setTextureName(Reference.MOD_ID + ":galaxium_chestplate").setCreativeTab(CreativeTabs.tabCombat);
-		galaxium_leggings = new ItemArmorMod(GALAXIUMA, 0, 2).setUnlocalizedName("galaxium_leggings").setTextureName(Reference.MOD_ID + ":galaxium_leggings").setCreativeTab(CreativeTabs.tabCombat);
-		galaxium_boots = new ItemArmorMod(GALAXIUMA, 0, 3).setUnlocalizedName("galaxium_boots").setTextureName(Reference.MOD_ID + ":galaxium_boots").setCreativeTab(CreativeTabs.tabCombat); 
-		galaxium_stick = new Item().setUnlocalizedName("galaxium_stick").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(Reference.MOD_ID + ":galaxium_stick");
+		galaxium_ingot = new Item().setUnlocalizedName("galaxium_ingot").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_ingot");
+		galaxium_sword = new ItemsSwords(GALAXIUM).setUnlocalizedName("galaxium_sword").setTextureName(Reference.MOD_ID + ":galaxium_sword").setCreativeTab(TWS.creativeTabMod);
+		galaxium_pickaxe = new ItemsPickaxesMod(GALAXIUM).setUnlocalizedName("galaxium_pickaxe").setTextureName(Reference.MOD_ID + ":galaxium_pickaxe").setCreativeTab(TWS.creativeTabMod);
+		galaxium_nugget = new Item().setUnlocalizedName("galaxium_nugget").setTextureName(Reference.MOD_ID + ":galaxium_nugget").setCreativeTab(TWS.creativeTabMod);
+		galaxium_helmet = new ItemArmorMod(GALAXIUMA, 0, 0).setUnlocalizedName("galaxium_helmet").setTextureName(Reference.MOD_ID + ":galaxium_helmet").setCreativeTab(TWS.creativeTabMod);
+		galaxium_chestplate = new ItemArmorMod(GALAXIUMA, 0, 1).setUnlocalizedName("galaxium_chestplate").setTextureName(Reference.MOD_ID + ":galaxium_chestplate").setCreativeTab(TWS.creativeTabMod);
+		galaxium_leggings = new ItemArmorMod(GALAXIUMA, 0, 2).setUnlocalizedName("galaxium_leggings").setTextureName(Reference.MOD_ID + ":galaxium_leggings").setCreativeTab(TWS.creativeTabMod);
+		galaxium_boots = new ItemArmorMod(GALAXIUMA, 0, 3).setUnlocalizedName("galaxium_boots").setTextureName(Reference.MOD_ID + ":galaxium_boots").setCreativeTab(TWS.creativeTabMod); 
+		galaxium_stick = new Item().setUnlocalizedName("galaxium_stick").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_stick");
 		
 		}
 	

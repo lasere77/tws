@@ -15,3 +15,5 @@ tile.galaxium_block.name=galaxium block
 tille.galaxium_strairs.name=galaxium strairs
 tille.galaxium_fence.name=galaxium fence
 tille.cave_block.name=cave block
+
+itemGroup.creativeTabMod=tws

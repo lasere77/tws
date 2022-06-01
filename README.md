@@ -77,5 +77,7 @@ craft:
 to get galaxium nugget you just have to put galaxium ores in an oven
 
 
+you can find all these items/blocks in the creative tab dedicated to tws
+
 
 Available on Minecraft version 1.7.10
