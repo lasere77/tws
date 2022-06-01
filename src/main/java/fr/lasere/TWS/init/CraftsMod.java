@@ -22,5 +22,8 @@ public class CraftsMod {
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_leggings, 1), new Object[] {"###", "# #", "# #", '#', ItemMod.galaxium_ingot});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_chestplate, 1), new Object[] {"# #", "###", "###", '#', ItemMod.galaxium_ingot});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_boots, 1), new Object[] {"# #", "# #", '#', ItemMod.galaxium_ingot});
+		GameRegistry.addRecipe(new ItemStack(BlockMod.galaxium_strairs, 6), new Object[] {"  #", " ##", "###",'#', BlockMod.galaxium_block});
+		GameRegistry.addRecipe(new ItemStack(BlockMod.galaxium_fence, 6), new Object[] {"#h#", "#h#", '#', BlockMod.galaxium_block, 'h', ItemMod.galaxium_stick});
+		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_stick, 6), new Object[] {"#", "#", '#', ItemMod.galaxium_ingot});
 	}
 }

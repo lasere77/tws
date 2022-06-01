@@ -14,7 +14,7 @@ items:
 
 blocks:
 
-    "galaxium_ore"
+    "galaxium_ore" (this block is generated from layer 5 to 10 in the overworld)
     "galaxium_block"
     "galaxium_strairs"
     "galaxium_fence"
@@ -52,6 +52,25 @@ craft:
        [#] [#] [#]
        [#] [#] [#]
        [#] [#] [#]
+    
+    galaxium_stick:
+       # = galaxium_ingot
+       [ ] [ ] [ ]
+       [ ] [#] [ ]
+       [ ] [#] [ ]
+    
+    galaxium_strairs:
+       d = galaxium_block
+       [ ] [ ] [d]
+       [ ] [d] [d]
+       [d] [d] [d]
+
+    galaxium_fence:
+       d = galaxium_block
+       f = galaxium_stick
+       [d] [f] [d]
+       [d] [f] [d]
+       [ ] [ ] [ ]
 
 
 
