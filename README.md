@@ -75,9 +75,10 @@ craft:
 
 
 to get galaxium nugget you just have to put galaxium ores in an oven
-
-
 you can find all these items/blocks in the creative tab dedicated to tws
 
+install:
+    it is recommended to download the .jar
+    if you haven't downloaded the .jar but the code you will have to then open a terminal in the folder and run the command "./gradlew build" wait, and once finished the mod will be located in "TWS\build\ libs"
 
 Available on Minecraft version 1.7.10
