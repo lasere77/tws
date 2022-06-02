@@ -3,7 +3,8 @@ item.galaxium_sword.name=galaxium sword
 item.galaxium_pickaxe.name=galaxium pickaxe
 item.galaxium_nugget.name=galaxium nugget
 item.galaxium_stick.name=galaxium stick
-
+item.galaxium_appel.name=galaxium apple
+item.galaxium_mixed_coal.name=galaxium mixed coal
 
 item.galaxium_helmet.name=galaxium healmet
 item.galaxium_chestplate.name=galaxium chestplate
@@ -15,5 +16,6 @@ tile.galaxium_block.name=galaxium block
 tille.galaxium_strairs.name=galaxium strairs
 tille.galaxium_fence.name=galaxium fence
 tille.cave_block.name=cave block
+tille.mossy_galaxium.name=mossy galaxium
 
 itemGroup.creativeTabMod=tws

@@ -24,22 +24,8 @@ blocks:
 
 craft:
 
-    armor:
+    armor: (each piece of armor (except bots) gives an effect)
     to create a galaxy armor you will need the galaxium ingot the pattern is the same as for the basic armor
-    
-    galaxy_sword:
-        L = gold
-        # = galaxy_ingot
-        [ ] [L] [ ]
-        [ ] [#] [ ]
-        [ ] [#] [ ]
-        
-    galaxium_pickaxe:
-        L = gold
-        # = galaxy_ingot
-        [#] [#] [#]
-        [ ] [#] [ ]
-        [ ] [L] [ ]
 
     galaxium_ingot:
         g = galaxium_nugget
@@ -47,17 +33,33 @@ craft:
         [g] [g] [g]
         [g] [g] [g]
 
-    galaxium_nugget:
-       # = galaxium_ingot
-       [#] [#] [#]
-       [#] [#] [#]
-       [#] [#] [#]
-    
     galaxium_stick:
+        # = galaxium_ingot
+        [ ] [ ] [ ]
+        [ ] [#] [ ]
+        [ ] [#] [ ]
+    
+    galaxy_sword:
+       L = gold
        # = galaxium_ingot
-       [ ] [ ] [ ]
+       s = galaxium_stick
+       [ ] [L] [ ]
        [ ] [#] [ ]
-       [ ] [#] [ ]
+       [ ] [s] [ ]
+       
+    galaxium_pickaxe:
+        L = gold
+        # = galaxy_ingot
+        s = galaxium_stick
+        [#] [#] [#]
+        [ ] [s] [ ]
+        [ ] [L] [ ]    
+
+    galaxium_block:
+       # = galaxium_ingot
+       [#] [#] [#]
+       [#] [#] [#]
+       [#] [#] [#]
     
     galaxium_strairs:
        d = galaxium_block
@@ -71,6 +73,27 @@ craft:
        [d] [f] [d]
        [d] [f] [d]
        [ ] [ ] [ ]
+    
+    galaxium_apple: (gives effect)
+       # = galaxium_ingot
+       a = apple
+       [#] [#] [#]
+       [#] [a] [#]
+       [#] [#] [#]
+    
+    galaxium_mixed_coal: (can cook 32 Item)
+        # = galaxium_ingot
+        c = coal
+        [#] [#] [#]
+        [#] [c] [#]
+        [#] [#] [#]
+
+    cave_block:
+        g = galaxium_block
+        n = galaxium_nugget
+        [g] [n] [g]
+        [n] [g] [n]
+        [g] [n] [g]
 
 
 
@@ -78,7 +101,6 @@ to get galaxium nugget you just have to put galaxium ores in an oven
 you can find all these items/blocks in the creative tab dedicated to tws
 
 install:
-
     it is recommended to download the .jar
     if you haven't downloaded the .jar but the code you will have to then open a terminal in the folder and run the command "./gradlew build" wait, and once finished the mod will be located in "TWS\build\ libs"
 

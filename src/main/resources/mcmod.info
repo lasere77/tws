@@ -6,9 +6,9 @@
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://github.com/lasere77",
-  "updateUrl": "",
-  "authorList": ["lasere"],
-  "credits": "lasere",
+  "updateUrl": "https://github.com/lasere77/tws/releases",
+  "authorList": ["lasere77"],
+  "credits": "lasere77",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

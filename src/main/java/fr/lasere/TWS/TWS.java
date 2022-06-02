@@ -6,10 +6,13 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import fr.lasere.TWS.init.BiomesMod;
 import fr.lasere.TWS.init.BlockMod;
 import fr.lasere.TWS.init.CraftsMod;
+import fr.lasere.TWS.init.FuelHndlerMod;
 import fr.lasere.TWS.init.ItemMod;
 import fr.lasere.TWS.proxy.CommonProxy;
 import fr.lasere.TWS.world.WorldRegister;
@@ -39,11 +42,13 @@ public class TWS {
 		BlockMod.register();
 		CraftsMod.init();
 		WorldRegister.mainRegistie();
+		BiomesMod.init();
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent envent) {
 		proxy.registerRenders();
+		GameRegistry.registerFuelHandler(new FuelHndlerMod());
 	}
 	
 	@EventHandler
