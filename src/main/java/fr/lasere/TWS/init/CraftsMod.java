@@ -30,5 +30,6 @@ public class CraftsMod {
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_stick, 6), new Object[] {"#", "#", '#', ItemMod.galaxium_ingot});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_apple, 1), new Object[] {"###", "#a#", "###", '#', ItemMod.galaxium_ingot, 'a', Items.apple});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_mixed_coal, 2), new Object[] {"###", "#c#", "###", '#', ItemMod.galaxium_ingot, 'c', Items.coal});
+                GameRegistry.addRecipe(new ItemStack(ItemMod.seed_strawberry, 3), new Object[] {"###", "#s#", "###", '#', ItemMod.galaxium_ingot, 's', Items.wheat_seeds});
 	}
 }

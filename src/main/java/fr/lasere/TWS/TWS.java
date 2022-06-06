@@ -36,10 +36,10 @@ public class TWS {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent envent) {
-		ItemMod.init();
-		ItemMod.register();
 		BlockMod.init();
 		BlockMod.register();
+		ItemMod.init();
+		ItemMod.register();
 		CraftsMod.init();
 		WorldRegister.mainRegistie();
 		BiomesMod.init();

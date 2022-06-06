@@ -94,11 +94,21 @@ craft:
         [g] [n] [g]
         [n] [g] [n]
         [g] [n] [g]
-
+    
+    seed_strawberry:(this seed )
+        # = galaxium_ingot
+        s = wheat_seeds
+        [#] [#] [#]
+        [#] [s] [#]
+        [#] [#] [#]
+    
 
 
 to get galaxium nugget you just have to put galaxium ores in an oven
 you can find all these items/blocks in the creative tab dedicated to tws
+
+update(1.2.1) a biome has been implemented a new biome(it's quite rare)it's quite dangerous case there are creepers which can pop even if it's day its group from 1 to 10 but in this biome you find "galaxium_ore" under a block of "moussy_galaxium" (the block that makes up the biome) and a block on each side and in its center you will find the block of "galaxium_ore"
+
 
 install:
     it is recommended to download the .jar

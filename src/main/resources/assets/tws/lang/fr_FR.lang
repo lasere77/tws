@@ -5,6 +5,9 @@ item.galaxium_nugget.name=pépite de galaxium
 item.galaxium_stick.name=bâton de galaxium
 item.galaxium_appel.name=pomme en galaxium
 item.galaxium_mixed_coal.name=galaxium mixed coal
+item.seed_strawberry.name=graine de fraise
+item.strawberry.name=fraise
+
 
 item.galaxium_helmet.name=casque en galaxium 
 item.galaxium_chestplate.name=plastron en galaxium 
@@ -14,10 +17,10 @@ item.galaxium_boots.name=bottes en galaxium
 
 tile.galaxium_ore.name=minerais de galaxium
 tile.galaxium_block.name=block de galaxium
-tille.galaxium_strairs.name=escalier en galaxium
-tille.galaxium_fence.name=barrière engalaxium
-tille.cave_block.name=cave block
-tille.mossy_galaxium.name=mousse de galaxium
+tile.galaxium_strairs.name=escalier en galaxium
+tile.galaxium_fence.name=barrière engalaxium
+tile.cave_block.name=cave block
+tile.mossy_galaxium.name=mousse de galaxium
 
 
 itemGroup.creativeTabMod=tws

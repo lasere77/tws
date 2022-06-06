@@ -3,11 +3,15 @@ package fr.lasere.TWS.init;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.lasere.TWS.Reference;
 import fr.lasere.TWS.TWS;
-import fr.lasere.TWS.items.ItemsFoodMod;
+import fr.lasere.TWS.items.ItemSeedMod;
+import fr.lasere.TWS.items.Food.ItemFoodGalaxiumApple;
+import fr.lasere.TWS.items.Food.ItemsFoodMod;
 import fr.lasere.TWS.items.Pickaxes.ItemsPickaxesGalaxium;
 import fr.lasere.TWS.items.armors.ItemArmorMod;
 import fr.lasere.TWS.items.swords.ItemsSwordsGalaxium;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -29,6 +33,8 @@ public class ItemMod {
 	public static Item galaxium_stick;
 	public static Item galaxium_apple;
 	public static Item galaxium_mixed_coal;
+	public static Item seed_strawberry;
+	public static Item strawberry;
 	
 	public static void init() {
 		galaxium_ingot = new Item().setUnlocalizedName("galaxium_ingot").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_ingot");
@@ -40,8 +46,10 @@ public class ItemMod {
 		galaxium_leggings = new ItemArmorMod(GALAXIUMA, 0, 2).setUnlocalizedName("galaxium_leggings").setTextureName(Reference.MOD_ID + ":galaxium_leggings").setCreativeTab(TWS.creativeTabMod);
 		galaxium_boots = new ItemArmorMod(GALAXIUMA, 0, 3).setUnlocalizedName("galaxium_boots").setTextureName(Reference.MOD_ID + ":galaxium_boots").setCreativeTab(TWS.creativeTabMod); 
 		galaxium_stick = new Item().setUnlocalizedName("galaxium_stick").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_stick");
-		galaxium_apple = new ItemsFoodMod(15, 10.0F, false).setAlwaysEdible().setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_apple").setUnlocalizedName("galaxium_apple");
+		galaxium_apple = new ItemFoodGalaxiumApple(15, 10.0F, false).setAlwaysEdible().setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_apple").setUnlocalizedName("galaxium_apple");
 		galaxium_mixed_coal = new Item().setUnlocalizedName("galaxium_mixed_coal").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_mixed_coal");
+		seed_strawberry = new ItemSeedMod(BlockMod.strawberry_block, Blocks.farmland).setUnlocalizedName("seed_strawberry").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":seed_strawberry");
+		strawberry = new ItemsFoodMod(4, 2.0F, false).setUnlocalizedName("strawberry").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":strawberry");
 		
 		}
 	
@@ -57,6 +65,8 @@ public class ItemMod {
 		GameRegistry.registerItem(galaxium_stick, "galaxium_stick");
 		GameRegistry.registerItem(galaxium_apple, "galaxium_apple");
 		GameRegistry.registerItem(galaxium_mixed_coal, "galaxium_mixed_coal");
+		GameRegistry.registerItem(seed_strawberry, "seed_strawberry");
+		GameRegistry.registerItem(strawberry, "strawberry");
 		
 	}
 }
