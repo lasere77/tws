@@ -1,4 +1,4 @@
-package fr.lasere.TWS.items;
+package fr.lasere.TWS.items.Food;
 
 import fr.lasere.TWS.init.BlockMod;
 import fr.lasere.TWS.init.ItemMod;
@@ -15,13 +15,4 @@ public class ItemsFoodMod extends ItemFood{
 	public ItemsFoodMod(int demi_gigo, float saturation, boolean p_i45339_3_) {
 		super(demi_gigo, saturation, p_i45339_3_);
 	}
-	
-	protected void onFoodEaten(ItemStack p_77849_1_, World p_77849_2_, EntityPlayer player) {
-		player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 1500, 3));
-		player.addPotionEffect(new PotionEffect(Potion.resistance.id, 15000, 3));
-		player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 15000, 3));
-		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 15000, 3));
-		player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 15000, 3));
-    }
-
 }

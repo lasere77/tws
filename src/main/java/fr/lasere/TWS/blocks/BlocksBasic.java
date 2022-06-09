@@ -1,7 +1,10 @@
 package fr.lasere.TWS.blocks;
 
+import fr.lasere.TWS.blocks.tileEntity.TileEntityPurifier;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 
 public class BlocksBasic extends Block{
 
@@ -10,6 +13,5 @@ public class BlocksBasic extends Block{
 		this.setHarvestLevel("pickaxe", level);
 		
 	}
-
 	
 }

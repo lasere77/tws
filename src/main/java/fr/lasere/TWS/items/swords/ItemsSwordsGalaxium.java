@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
 
 
@@ -15,7 +16,7 @@ public class ItemsSwordsGalaxium extends ItemSword{
 	public ItemsSwordsGalaxium(ToolMaterial p_i45356_1_) {
 		super(p_i45356_1_);
 	}
-	
+    
 	/*
 	 add effect/enchantment to this sword
 	 */

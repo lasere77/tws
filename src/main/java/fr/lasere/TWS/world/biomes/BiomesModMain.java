@@ -7,6 +7,7 @@ import fr.lasere.TWS.init.BlockMod;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntityCreeper;
+import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
@@ -22,7 +23,7 @@ public class BiomesModMain extends BiomeGenBase{
 		this.fillerBlock = Blocks.stone;
 		this.enableRain = false;
 		this.enableSnow = true;
-		this.spawnableCreatureList.add(new SpawnListEntry(EntityCreeper.class, 5, 1, 5));
+		this.spawnableCreatureList.add(new SpawnListEntry(EntityCreeper.class, 5, 1, 10));
 		this.waterColorMultiplier = 11141375;
 		this.addDefaultFlowers();
 	}

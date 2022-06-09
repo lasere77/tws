@@ -1,7 +1,5 @@
 package fr.lasere.TWS.items.armors;
 
-import com.sun.xml.internal.ws.dump.LoggingDumpTube.Position;
-
 import fr.lasere.TWS.Reference;
 import fr.lasere.TWS.init.ItemMod;
 import net.minecraft.entity.Entity;
@@ -37,7 +35,7 @@ public class ItemArmorMod extends ItemArmor{
 			player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 400, 0));
 		}
 		if(this == ItemMod.galaxium_chestplate) {
-			player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 400, 0));
+			player.addPotionEffect(new PotionEffect(Potion.resistance.id, 400, 1));
 		}
 		if(this == ItemMod.galaxium_leggings) {
 			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 400, 0));

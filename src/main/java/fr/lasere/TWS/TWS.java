@@ -9,6 +9,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import fr.lasere.TWS.blocks.tileEntity.TileEntityMeteor;
+import fr.lasere.TWS.blocks.tileEntity.TileEntityPurifier;
 import fr.lasere.TWS.init.BiomesMod;
 import fr.lasere.TWS.init.BlockMod;
 import fr.lasere.TWS.init.CraftsMod;
@@ -36,19 +38,21 @@ public class TWS {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent envent) {
-		ItemMod.init();
-		ItemMod.register();
 		BlockMod.init();
 		BlockMod.register();
+		ItemMod.init();
+		ItemMod.register();
 		CraftsMod.init();
 		WorldRegister.mainRegistie();
 		BiomesMod.init();
 	}
-	
+
 	@EventHandler
 	public void init(FMLInitializationEvent envent) {
 		proxy.registerRenders();
 		GameRegistry.registerFuelHandler(new FuelHndlerMod());
+		GameRegistry.registerTileEntity(TileEntityPurifier.class, Reference.MOD_ID + ":purifier");
+		GameRegistry.registerTileEntity(TileEntityMeteor.class, Reference.MOD_ID + ":meteor");
 	}
 	
 	@EventHandler

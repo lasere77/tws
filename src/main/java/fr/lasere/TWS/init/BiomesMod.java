@@ -9,6 +9,6 @@ public class BiomesMod {
 	
 	
 	public static void init() {
-		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(new BiomesModMain(100), 1));
+		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(new BiomesModMain(100), 10));
 	}
 }
