@@ -7,7 +7,9 @@ import fr.lasere.TWS.blocks.BlockCropsMod;
 import fr.lasere.TWS.blocks.BlockMeteor;
 import fr.lasere.TWS.blocks.BlocksBasic;
 import fr.lasere.TWS.blocks.BlocksMultiTexturPurifier;
+import fr.lasere.TWS.blocks.BlocksBasic;
 import fr.lasere.TWS.blocks.BlocksStrairsMod;
+import fr.lasere.TWS.blocks.metaData.BlocksMetaDataGalaxiumChest;
 import fr.lasere.TWS.blocks.metaData.BlocksMetaDataPurifier;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -26,6 +28,8 @@ public class BlockMod {
 	public static Block galaxium_meteore;
 	public static Block strawberry_block;
 	public static Block purifier;
+	public static Block galaxium_chest;
+	
 	
 	public static void init() {
 		galaxium_ore = new BlocksBasic(net.minecraft.block.material.Material.rock, 3).setCreativeTab(TWS.creativeTabMod).setBlockName("galaxium_ore").setBlockTextureName(Reference.MOD_ID + ":galaxium_ore").setHardness(60.0F).setResistance(2000.0F).setStepSound(Block.soundTypePiston);
@@ -36,8 +40,10 @@ public class BlockMod {
 		mossy_galaxium = new BlocksBasic(net.minecraft.block.material.Material.rock, 2).setCreativeTab(TWS.creativeTabMod).setBlockName("mossy_galaxium").setBlockTextureName(Reference.MOD_ID + ":mossy_galaxium").setHardness(60.0F).setResistance(50.0F);
 		galaxium_meteore = new BlockMeteor(net.minecraft.block.material.Material.rock).setCreativeTab(TWS.creativeTabMod).setBlockName("galaxium_meteore").setBlockTextureName(Reference.MOD_ID + ":galaxium_meteore").setHardness(20.0F).setResistance(50.0F);
 		strawberry_block = new BlockCropsMod().setBlockName("strawberry_block").setBlockTextureName(Reference.MOD_ID + ":strawberry_block");
+		galaxium_meteore = new BlocksBasic(net.minecraft.block.material.Material.rock, 4).setCreativeTab(TWS.creativeTabMod).setBlockName("galaxium_meteore").setBlockTextureName(Reference.MOD_ID + ":galaxium_meteore").setHardness(20.0F).setResistance(50.0F);
+		strawberry_block = new BlockCropsMod().setBlockName("strawberry_block").setBlockTextureName(Reference.MOD_ID + ":strawberry_block");
 		purifier = new BlocksMetaDataPurifier(net.minecraft.block.material.Material.rock).setCreativeTab(TWS.creativeTabMod).setBlockName("purifier").setHardness(10.0F).setResistance(50.0F);
-		
+		galaxium_chest = new BlocksMetaDataGalaxiumChest(net.minecraft.block.material.Material.rock).setCreativeTab(TWS.creativeTabMod).setBlockName("galaxium_chest").setHardness(10.0F).setResistance(60.0F);
 	}
 	
 	public static void register() {
@@ -50,6 +56,6 @@ public class BlockMod {
 		GameRegistry.registerBlock(galaxium_meteore, galaxium_meteore.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(strawberry_block, strawberry_block.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(purifier, purifier.getUnlocalizedName().substring(5));
-		
+		GameRegistry.registerBlock(galaxium_chest, galaxium_chest.getUnlocalizedName().substring(5));
 	}
 }

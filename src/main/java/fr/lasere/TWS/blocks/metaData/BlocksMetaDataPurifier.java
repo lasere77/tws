@@ -84,7 +84,8 @@ public class BlocksMetaDataPurifier extends Block{
  		  }
 
     	}
-    	return this.getIcon(side, world.getBlockMetadata(x, y, z));
+    	return this.block_textur_default;
+    	//return this.getIcon(side, world.getBlockMetadata(x, y, z));
     }
     
     
@@ -98,7 +99,7 @@ public class BlocksMetaDataPurifier extends Block{
 	  if(side == 3 || side == 4 || side == 2 || side == 5) {
 			 return this.side;
 		  }
-       return this.block_textur_default;
+	  return this.block_textur_default;
     }
     
        /*

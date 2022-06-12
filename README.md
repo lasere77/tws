@@ -11,6 +11,11 @@ items:
     "galaxium_nugget"
     "galaxium_sword"
     "galaxium_pickaxe"
+    "galaxium_stick"
+    "galaxium_apple"
+    "galaxium_mixed_coal"
+    "seed_strawberry"
+    "strawberry"
 
 blocks:
 
@@ -18,8 +23,11 @@ blocks:
     "galaxium_block"
     "galaxium_strairs"
     "galaxium_fence"
-    "cellar_block"
-    "galaxium_trophy" (this block is currently under development)
+    "cave_block"
+    "mossy_galaxium" (this block is generated in the new biomes (the only ones I made))
+    "galaxium_meteore" (this block is generated in the new biomes (the only ones I made))
+    "purifier"
+    "galaxium_chest" (this chest has the same characteristics as a classic chest except that you cannot make double chests with it but it is very resistant to explosions worth item are in this chest in a safe place)
 
 
 craft:
@@ -94,11 +102,30 @@ craft:
         [g] [n] [g]
         [n] [g] [n]
         [g] [n] [g]
-
+    
+    seed_strawberry:
+        # = galaxium_ingot
+        s = wheat_seeds
+        [#] [#] [#]
+        [#] [s] [#]
+        [#] [#] [#]
+    
+    galaxium_chest:
+        # = galaxium_ingot
+        b = galaxium_block
+        c = chest
+        [#] [b] [#]
+        [b] [c] [b]
+        [#] [b] [#]
+    
 
 
 to get galaxium nugget you just have to put galaxium ores in an oven
 you can find all these items/blocks in the creative tab dedicated to tws
+
+update(1.2.1) a biome has been implemented a new biome(it's quite rare)it's quite dangerous case there are creepers which can pop even if it's day its group from 1 to 10 but in this biome you find "galaxium_ore" under a block of "moussy_galaxium" (the block that makes up the biome) and a block on each side and in its center you will find the block of "galaxium_ore"
+
+update(1.3.2) a galaxium chest was added (it resists explosions compared to normal chests) and fixes were made.
 
 install:
     it is recommended to download the .jar

@@ -3,6 +3,7 @@ package fr.lasere.TWS.init;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.lasere.TWS.items.swords.ItemsSwordsGalaxium;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -31,5 +32,6 @@ public class CraftsMod {
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_apple, 1), new Object[] {"###", "#a#", "###", '#', ItemMod.galaxium_ingot, 'a', Items.apple});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.galaxium_mixed_coal, 2), new Object[] {"###", "#c#", "###", '#', ItemMod.galaxium_ingot, 'c', Items.coal});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.seed_strawberry, 3), new Object[] {"###", "#s#", "###", '#', ItemMod.galaxium_ingot, 's', Items.wheat_seeds});
+		GameRegistry.addRecipe(new ItemStack(BlockMod.galaxium_chest, 1),new Object[] {"#b#", "bcb", "#b#", '#', ItemMod.galaxium_ingot, 'b', BlockMod.galaxium_block, 'c', Blocks.chest});
 	}
 }

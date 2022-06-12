@@ -1,16 +1,21 @@
 package fr.lasere.TWS;
 
+import java.nio.channels.NetworkChannel;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import fr.lasere.TWS.blocks.tileEntity.TileEntityGalaxiumChest;
 import fr.lasere.TWS.blocks.tileEntity.TileEntityMeteor;
 import fr.lasere.TWS.blocks.tileEntity.TileEntityPurifier;
+import fr.lasere.TWS.gui.GuiHandlerGalaxiumChest;
 import fr.lasere.TWS.init.BiomesMod;
 import fr.lasere.TWS.init.BlockMod;
 import fr.lasere.TWS.init.CraftsMod;
@@ -53,6 +58,9 @@ public class TWS {
 		GameRegistry.registerFuelHandler(new FuelHndlerMod());
 		GameRegistry.registerTileEntity(TileEntityPurifier.class, Reference.MOD_ID + ":purifier");
 		GameRegistry.registerTileEntity(TileEntityMeteor.class, Reference.MOD_ID + ":meteor");
+		GameRegistry.registerTileEntity(TileEntityGalaxiumChest.class, Reference.MOD_ID + ":chest");
+		
+		NetworkRegistry.INSTANCE.registerGuiHandler(Reference.instance, new GuiHandlerGalaxiumChest());
 	}
 	
 	@EventHandler

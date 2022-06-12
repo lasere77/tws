@@ -19,5 +19,8 @@ tile.galaxium_strairs.name=galaxium strairs
 tile.galaxium_fence.name=galaxium fence
 tile.cave_block.name=cave block
 tile.mossy_galaxium.name=mossy galaxium
+tile.purifier.name=purifier
+tile.galaxium_chest.name=galaxium chest
+tile.galaxium_meteore.name=galaxium meteore
 
 itemGroup.creativeTabMod=tws

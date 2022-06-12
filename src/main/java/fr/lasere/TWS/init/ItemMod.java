@@ -37,7 +37,10 @@ public class ItemMod {
 	public static Item seed_strawberry;
 	public static Item strawberry;
 	public static Item debug_stick;
-	
+	public static Item fex;
+	public static Item flex;
+	public static Item flex_and_fex;
+
 	public static void init() {
 		galaxium_ingot = new Item().setUnlocalizedName("galaxium_ingot").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":galaxium_ingot");
 		galaxium_sword = new ItemsSwordsGalaxium(GALAXIUM).setUnlocalizedName("galaxium_sword").setTextureName(Reference.MOD_ID + ":galaxium_sword").setCreativeTab(TWS.creativeTabMod);
@@ -53,6 +56,9 @@ public class ItemMod {
 		seed_strawberry = new ItemSeedMod(BlockMod.strawberry_block, Blocks.farmland).setUnlocalizedName("seed_strawberry").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":seed_strawberry");
 		strawberry = new ItemsFoodMod(4, 2.0F, false).setUnlocalizedName("strawberry").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":strawberry");
 		debug_stick = new ItemDebug().setUnlocalizedName("debug_stick").setTextureName(Reference.MOD_ID + ":debug_stick").setCreativeTab(TWS.creativeTabMod);
+		fex = new Item().setUnlocalizedName("fex").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":fex");
+		flex = new Item().setUnlocalizedName("flex").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":flex");
+		flex_and_fex= new Item().setUnlocalizedName("flex_and_fex").setCreativeTab(TWS.creativeTabMod).setTextureName(Reference.MOD_ID + ":flex_and_fex");
 		
 		}
 	
@@ -71,6 +77,9 @@ public class ItemMod {
 		GameRegistry.registerItem(seed_strawberry, "seed_strawberry");
 		GameRegistry.registerItem(strawberry, "strawberry");
 		GameRegistry.registerItem(debug_stick, "debug_stick");
+		GameRegistry.registerItem(fex, "fex");
+		GameRegistry.registerItem(flex, "flex");
+		GameRegistry.registerItem(flex_and_fex, "flex_and_fex");
 		
 	}
 }

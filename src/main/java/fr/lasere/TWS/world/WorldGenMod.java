@@ -54,11 +54,11 @@ public class WorldGenMod implements IWorldGenerator{
 	}
 	
 	private void GenerateEnd(World world, int i, int j, Random random) {
-		addOre(BlockMod.galaxium_ore, Blocks.end_stone, random, world, i, j, 5, 10, 1, 3, 2);
+		addOre(BlockMod.galaxium_ore, Blocks.end_stone, random, world, i, j, 20, 60, 1, 3, 2);
 	}
 
 	private void GenerateOverWorld(World world, int i, int j, Random random) {
-		addOre(BlockMod.galaxium_ore, Blocks.stone, random, world, i, j, 20, 60, 1, 3, 1);
+		addOre(BlockMod.galaxium_ore, Blocks.stone, random, world, i, j, 5, 10, 1, 3, 1);
 		addStructure(StructureGenMod.structureMod, random, world, i, j, 50, 150, 10);
 		addStructure(StructureGenMod.galaxium_meteore, random, world, i, j, 50, 150, 60);
 		
